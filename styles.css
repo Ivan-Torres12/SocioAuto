@@ -1,0 +1,64 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #D6D6D6;
+  }
+  
+  /* Botón base */
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    color: #4b5563; /* Tailwind gray-700 */
+    font-weight: 500;
+    border-radius: 9999px; /* Full-rounded */
+    border: 1px solid #d1d5db; /* Tailwind gray-300 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Hover con color #1E90FF */
+  .filter-btn:hover {
+    background-color: #1E90FF;
+    color: white;
+  }
+  
+  /* Botón activo */
+  .filter-btn.active {
+    background-color: #1E90FF;
+    color: white;
+  }
+  
+  /* Contenedor de los filtros */
+  .filters-container {
+    display: flex;
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    padding: 0.5rem; /* Espaciado interno para evitar recortes del scroll */
+    gap: 1rem; /* Espaciado entre los botones */
+    flex-wrap: nowrap; /* Evita que los botones se envuelvan */
+    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+    justify-content: center; /* Centra los filtros horizontalmente */
+    margin-top: 1rem; /* Espaciado superior */
+  }
+  
+  .filters-container::-webkit-scrollbar {
+    height: 8px; /* Altura del scrollbar */
+  }
+  
+  .filters-container::-webkit-scrollbar-thumb {
+    background-color: #1E90FF; /* Color del scroll */
+    border-radius: 4px; /* Bordes redondeados del scroll */
+  }
+  
+  /* Botones dentro del contenedor */
+  .filters {
+    display: flex; /* Coloca los botones en línea horizontalmente */
+    gap: 1rem; /* Espaciado entre botones */
+  }
+  
+ /* fin de filtros */
+ .menu-open {
+  display: block;
+}
+.menu-closed {
+  display: none;
+}

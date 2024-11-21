@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles del Auto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 font-sans text-gray-900 h-screen">
+  <!-- El contenedor principal ocupa toda la pantalla -->
+  <div class="h-full w-full flex flex-col bg-white  shadow-2xl overflow-hidden">
+    <!-- Header -->
+    <div class="relative bg-blue-500 p-6 shadow-md">
+      <a href="mostrar.html" class="absolute left-4 top-4 text-white text-2xl font-bold hover:text-blue-300 transition">&larr;</a>
+      <h1 class="text-center text-white text-2xl font-bold">Detalles del auto</h1>
+    </div>
+
+    <!-- Car Image -->
+    <div class="bg-gradient-to-b from-blue-400 to-blue-500 flex justify-center py-6 shadow-md flex-grow">
+      <img src="imagenes/car3.png" alt="Ford Expedition" class="h-48 object-contain rounded-lg ">
+    </div>
+
+    <!-- Car Details -->
+    <div class="p-6 flex-grow overflow-y-auto">
+      <h2 class="text-3xl font-bold text-gray-800 mb-3">Ford EXPEDITION</h2>
+      <p class="text-sm text-gray-600 mb-6">Garantía por 90 días o 2,000 km (lo que suceda primero) en motor y transmisión.</p>
+      <div class="flex items-center mb-6">
+        <span class="text-yellow-400 text-2xl">&#9733;</span>
+        <span class="ml-2 text-gray-700 text-lg font-medium">(4.5)</span>
+      </div>
+
+      <!-- Characteristics -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center mb-8">
+        <div class="p-4 bg-blue-100 rounded-lg shadow-md">
+          <span class="block text-blue-500 text-2xl">👥</span>
+          <p class="text-sm font-semibold">6 Personas</p>
+        </div>
+        <div class="p-4 bg-blue-100 rounded-lg shadow-md">
+          <span class="block text-blue-500 text-2xl">🏎️</span>
+          <p class="text-sm font-semibold">200 km/h</p>
+        </div>
+        <div class="p-4 bg-blue-100 rounded-lg shadow-md">
+          <span class="block text-blue-500 text-2xl">🎨</span>
+          <p class="text-sm font-semibold">Blanco con negro</p>
+        </div>
+        <div class="p-4 bg-blue-100 rounded-lg shadow-md">
+          <span class="block text-blue-500 text-2xl">⚙️</span>
+          <p class="text-sm font-semibold">Automática</p>
+        </div>
+      </div>
+
+      <!-- Price and Availability -->
+      <div class="bg-gray-50 p-4 rounded-lg shadow-md mb-8">
+        <p class="text-lg font-semibold">Precio: <span class="text-blue-500 text-2xl">$465,000</span></p>
+        <p class="text-sm text-gray-600 mt-2">Disponibles: <span class="text-blue-500 font-semibold">1</span></p>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center">
+        <button class="w-full sm:w-auto px-6 py-3 bg-blue-500 text-white rounded-lg font-bold shadow-lg hover:bg-blue-600 transition">
+          Obtener Cotización
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocioAuto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="mb-2">
+    <div class="header-container flex justify-between items-center px-4 py-2 space-x-4">
+      <!-- Ícono del menú -->
+      <div class="menu-icon transition-transform duration-300 ease-in-out hover:scale-110">
+        <a href="/login.html" class="text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </a>
+      </div>
+      <!-- Logo SocioAuto -->
+      <div class="logo flex items-center gap-2 transition-transform duration-300 ease-in-out hover:scale-110">
+        <a href="/login.html" class="flex items-center text-lg font-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1E90FF" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+            <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+          </svg>
+          <span class="text-[#000000] ml-2">SocioAuto</span>
+        </a>
+      </div>
+      <!-- Imagen de perfil -->
+      <div class="perfil transition-transform duration-300 ease-in-out hover:scale-110">
+        <a href="/login.html" class="w-10 h-10 flex justify-center items-center rounded-full border border-gray-300 shadow-[0_4px_6px_2px_rgba(0,0,0,0.5)]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="search flex justify-center items-center w-full px-4 py-2">
+      <div class="search-bar w-full max-w-2xl h-10 bg-white border border-gray-300 shadow-lg rounded-full">
+        <input 
+          type="text" 
+          placeholder="Buscar Auto..." 
+          class="w-full h-full px-6 text-gray-700 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        >
+      </div>
+    </div>
+    <div class="filters-container">
+      <div class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Electrónico</button>
+        <button class="filter-btn">Toyota</button>
+        <button class="filter-btn">Nissan</button>
+        <button class="filter-btn">BMW</button>
+        <button class="filter-btn">Mazda</button>
+        <button class="filter-btn">Chevrolet</button>
+      </div>
+    </div>
+    
+    
+    
+    <div class="car-cards flex flex-wrap justify-center gap-6 p-6">
+      <!-- Tarjeta 1 -->
+      <div class="car-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 bg-white shadow-2xl rounded-3xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-3xl">
+          <img src="/imagenes/car1.png" alt="Jeep GRAND CHEROKEE" class="w-full object-cover rounded-t-2xl">
+          <div class="car-info p-6">
+              <h2 class="text-2xl font-bold text-gray-800 mb-2">Jeep GRAND CHEROKEE</h2>
+              <p class="text-lg text-gray-600 mb-2">$465,000 MEX</p>
+              <p class="text-lg text-gray-600 mb-4">Gómez Palacio</p>
+              <button class="buy-btn w-full py-3 px-6 bg-blue-600 text-white rounded-2xl hover:bg-blue-800 transition duration-300">Comprar</button>
+          </div>
+      </div>
+  
+      <!-- Tarjeta 2 -->
+      <div class="car-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 bg-white shadow-2xl rounded-3xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-3xl">
+          <img src="/imagenes/car2.png" alt="BMW X5" class="w-full object-cover rounded-t-2xl">
+          <div class="car-info p-6">
+              <h2 class="text-2xl font-bold text-gray-800 mb-2">BMW X5</h2>
+              <p class="text-lg text-gray-600 mb-2">$61,000 USD</p>
+              <p class="text-lg text-gray-600 mb-4">Torreón</p>
+              <button class="buy-btn w-full py-3 px-6 bg-blue-600 text-white rounded-2xl hover:bg-blue-800 transition duration-300">Comprar</button>
+          </div>
+      </div>
+  
+      <!-- Tarjeta 3 -->
+      <div class="car-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 bg-white shadow-2xl rounded-3xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-3xl">
+          <img src="/imagenes/car3.png" alt="BMW X5" class="w-full object-cover rounded-t-2xl">
+          <div class="car-info p-6">
+              <h2 class="text-2xl font-bold text-gray-800 mb-2">BMW X5</h2>
+              <p class="text-lg text-gray-600 mb-2">$61,000 USD</p>
+              <p class="text-lg text-gray-600 mb-4">Torreón</p>
+              <button class="buy-btn w-full py-3 px-6 bg-blue-600 text-white rounded-2xl hover:bg-blue-800 transition duration-300">Comprar</button>
+          </div>
+      </div>
+  </div>
+  
+  <div class="relative w-full max-w-2xl mx-auto mt-8">
+    <!-- Imagen del banner -->
+    <img src="/imagenes/baner.jpg" alt="Nissan Car" class="w-full h-64 object-cover rounded-xl shadow-xl">
+
+    <!-- Texto superpuesto -->
+    <div class="absolute inset-0 bg-black bg-opacity-30 rounded-xl flex items-center justify-center">
+        <h2 class="text-white text-3xl font-bold text-center px-4">Lo más nuevo de Nissan</h2>
+    </div>
+</div>
+
+    </main>
+    <footer>
+      <br><br>
+    </footer>
+</body>
+</html>
